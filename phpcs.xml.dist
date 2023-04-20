@@ -12,8 +12,7 @@
 
     <rule ref="PSR12">
             <!--
-                Les règles suivantes sont exclues parce qu'elles sont
-                incompatibles entre php-cs-fixer et phpcbf (php code beautifuler)
+                Prevent conflict between php-cs-fixer and phpcbf rules
             -->
             <exclude name="PSR12.Operators.OperatorSpacing.NoSpaceBefore"/>
             <exclude name="PSR12.Operators.OperatorSpacing.NoSpaceAfter"/>
@@ -26,5 +25,5 @@
     <file>config/</file>
     <file>public/</file>
     <file>src/</file>
-
+    <file>tests/</file>
 </ruleset>

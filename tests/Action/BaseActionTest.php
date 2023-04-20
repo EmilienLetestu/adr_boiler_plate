@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: emilien
@@ -8,15 +9,17 @@
 
 namespace App\Tests\Action;
 
-
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class BaseActionTest extends WebTestCase
 {
-    public function test__invoke()
+    public function testInvoke()
     {
         $client = static::createClient();
         $client->request('GET', '/default');
         $this->assertResponseIsSuccessful();
+
+        $expected = ["message = hello world"];
+        $this->assertEquals($expected, json_decode($client->getResponse()->getContent()));
     }
 }
