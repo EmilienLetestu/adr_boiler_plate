@@ -13,6 +13,7 @@ use App\Responder\BaseResponder;
 use Symfony\Component\HttpFoundation\Response;
 
 class BaseAction
+
 {
     public function __invoke(BaseResponder $responder): Response
     {
