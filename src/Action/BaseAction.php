@@ -16,6 +16,6 @@ class BaseAction
 {
     public function __invoke(BaseResponder $responder): Response
     {
-        return $responder(['message = hello world']);
+        return $responder(['message' => 'hello world']);
     }
 }

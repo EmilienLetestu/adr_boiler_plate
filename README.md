@@ -15,9 +15,18 @@ A ready to use Action Domain Responder Symfony skeleton
 
 - run test `php bin/phpunit`
 - run `phpcs` analysis `composer php-cs`
-- run `php code beatifier` to fix coding style issues `composer php-code-beautifier`
+- run `php code beautifier` to fix coding style issues `composer php-code-beautifier`
 
 ## GitFlow
 
 - every `commit` will trigger a pre-commit hook to perform a `phpcs` analysis
-- perform a circle-ci analysis on `push`
+- trigger a circle-ci analysis on `push`
+
+## Status badge
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/EmilienLetestu/adr_boiler_plate/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/EmilienLetestu/adr_boiler_plate/tree/main)
+
+## Documentation
+
+- [Symfony documentation](https://symfony.com/doc/current/index.html)
+- [CircleCI](https://circleci.com/docs/)

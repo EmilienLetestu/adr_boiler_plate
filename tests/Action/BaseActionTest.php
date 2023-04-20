@@ -19,7 +19,7 @@ class BaseActionTest extends WebTestCase
         $client->request('GET', '/default');
         $this->assertResponseIsSuccessful();
 
-        $expected = ["message = hello world"];
-        $this->assertEquals($expected, json_decode($client->getResponse()->getContent()));
+        $expected = ['message' => 'hello world'];
+        $this->assertSame($expected, json_decode($client->getResponse()->getContent(), true));
     }
 }
